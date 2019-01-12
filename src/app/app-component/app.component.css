@@ -1,0 +1,13 @@
+h1{
+    padding:auto;
+}
+
+ul li{
+    background-color: darkgray;
+    padding: 10px;
+    margin-bottom:5px;
+}
+ul li h2 a{
+    font-size: 12px;
+     color: white;
+}
