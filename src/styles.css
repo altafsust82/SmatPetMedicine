@@ -38,6 +38,8 @@ body {
   .appointment-list .pet-item {
     border-bottom: 1px dotted gray;
   }
+  .appointment-list .pet-item:nth-child(odd) {
+background-color: whitesmoke;  }
   
   .appointment-list .pet-item:last-child {
     border-bottom: none;

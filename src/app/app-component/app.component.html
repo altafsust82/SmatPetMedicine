@@ -6,9 +6,13 @@
         <div class="container">
           <!-- <h2 class="py-5">{{title}}</h2> -->
           <app-add (addEvent) = "addApt($event)" ></app-add>
-          <app-search></app-search>
-          <app-list [aptList]="theList" 
+          <app-search (searchEvent)="searchApt($event)" 
+          [orderBy] = "orderBy" [orderType] = "orderType"
+          (orderEvent)="handleSort($event)"
+          ></app-search>
+          <app-list [aptList]="searchList" 
           (deleteEvent)="deleteApt($event)"
+          (updateEvent)="updateApt($event)"
           ></app-list>
 
         </div>
