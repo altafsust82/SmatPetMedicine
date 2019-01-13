@@ -17,7 +17,7 @@ export class ListComponent {
     this.updateEvent.emit({
       theApt: theApt,
       labelName: labelName,
-      newValue: newValue;
+      newValue: newValue
     });
   }
 }
